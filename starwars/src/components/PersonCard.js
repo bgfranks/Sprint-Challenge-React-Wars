@@ -9,10 +9,10 @@ const CardContainer = styled.div`
   margin: 20px;
   border-radius: 10px;
   color: #f3f3f3;
-  box-shadow: 10px 10px 18px 0px rgba(0, 0, 0, 0.75);
-  transition: 0.3s;
+  box-shadow: 15px 15px 23px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
   &:hover {
-    background: rgba(46, 85, 124, 0.8);
+    background: rgba(46, 85, 124, 1);
     box-shadow: 5px 5px 9px 0px rgba(0, 0, 0, 0.9);
   }
 `;
