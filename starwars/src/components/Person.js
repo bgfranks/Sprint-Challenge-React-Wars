@@ -3,6 +3,13 @@ import axios from "axios";
 import PersonCard from "./PersonCard";
 import styled from "styled-components";
 
+const PersonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+`;
+
 const Person = () => {
   const [personName, setPersonName] = useState([]);
 
@@ -17,7 +24,7 @@ const Person = () => {
   }, []);
 
   return (
-    <div className="person-container">
+    <PersonContainer>
       {personName.map(personData => {
         return (
           <PersonCard
@@ -29,7 +36,7 @@ const Person = () => {
           />
         );
       })}
-    </div>
+    </PersonContainer>
   );
 };
 
